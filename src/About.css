@@ -1,3 +1,30 @@
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .image-container {
+  width: 35%;
+}
+
+.about .image-container img {
+  width: 100%;
+}
+.about .text-wrap {
+  width: 60%;
+  padding: 0 0 0 2rem;
+}
+.about .small-title {
+  font-size: 2.5rem;
+}
+.about .title {
+  font-size: 3rem;
+}
+.about .text {
+  font-size: 1.25rem;
+  padding: 2rem 0 0;
+  max-width: 60ch;
+}
 .clicker-container {
   width: 300px;
   background-color: rgb(255, 255, 255);
@@ -6,6 +33,7 @@
   position: relative;
   height: 50px;
   border-radius: 2px;
+  transform-style: preserve-3d;
 }
 @keyframes expand {
   0%,

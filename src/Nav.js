@@ -10,7 +10,7 @@ export default function Nav() {
 
         <ul className="links-list">
           <li>
-            <a href="">niklasport88@gmail.com</a>
+            <a href="mailto:niklasport88@gmail.com">niklasport88@gmail.com</a>
           </li>
           <li>
             <a>LinkedIn</a>
