@@ -1,35 +1,36 @@
-import React from 'react';
-import './About.css';
-import { useState, useRef } from 'react';
+import React from "react";
+import "./About.css";
+import { useState, useRef } from "react";
 
 export default function About() {
   const clicker = useRef(null);
-  const [insideText, setInsideText] = useState('Click the arrow');
+  const [insideText, setInsideText] = useState("Click the arrow");
   const [number, setNumber] = useState(0);
   const [brokenClicks, setBrokenClicks] = useState(0);
 
+  // Array of strings to show up in the clicker box
   const stringsArray = [
-    'Wow',
+    "Wow",
     "You're doing great!",
-    'What a good clicker!',
-    'Yea thats about it',
-    'Its broken',
+    "What a good clicker!",
+    "Yea thats about it",
+    "Its broken",
   ];
 
   const containerExpand = () => {
-    let clickerContainer = document.querySelector('.clicker-container');
-    clickerContainer.classList.add('expand');
+    let clickerContainer = document.querySelector(".clicker-container");
+    clickerContainer.classList.add("expand");
     const removeExpand = setTimeout(() => {
-      clickerContainer.classList.remove('expand');
+      clickerContainer.classList.remove("expand");
     }, 500);
   };
 
   const stringAndMoveFunction = () => {
-    let clickerMover = document.querySelector('.clicker-mover');
+    let clickerMover = document.querySelector(".clicker-mover");
     stringsArray[number] && setInsideText(stringsArray[number]);
     setNumber(number + 1);
     if (number > 3) return;
-    clickerMover.classList.toggle('move');
+    clickerMover.classList.toggle("move");
   };
 
   const blockClick = () => {
@@ -40,14 +41,14 @@ export default function About() {
   };
 
   const breakContainer = () => {
-    let clickerContainer = document.querySelector('.clicker-container');
+    let clickerContainer = document.querySelector(".clicker-container");
     setBrokenClicks(brokenClicks + 1);
     if (brokenClicks >= 4) {
-      clickerContainer.classList.add('red');
+      clickerContainer.classList.add("red");
       const removeExpand = setTimeout(() => {
-        clickerContainer.classList.remove('red');
+        clickerContainer.classList.remove("red");
       }, 800);
-      if (brokenClicks > 4) clickerContainer.classList.add('break');
+      if (brokenClicks > 4) clickerContainer.classList.add("break");
     }
   };
 
@@ -71,7 +72,7 @@ export default function About() {
           <h2 className="small-title">Welcome!</h2>
           <h1 className="title">My name is Nik Port</h1>
           <p className="text">
-            I am a front-end web developer/designer <br /> <br /> I am currently
+            I am a front-end engineer/web designer <br /> <br /> I am currently
             working as a web designer, but have a passion for implementing ideas
             and creating fun and interactive web experiences
             <br />

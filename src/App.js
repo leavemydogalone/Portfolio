@@ -1,7 +1,7 @@
-import './App.css';
-import Nav from './Nav';
-import About from './About';
-import Projects from './Projects';
+import "./App.css";
+import Nav from "./Nav";
+import About from "./About";
+import Projects from "./Projects";
 
 function App() {
   return (
