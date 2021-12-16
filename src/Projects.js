@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="container">
-        <h2 className="title">Projects</h2>
+        <h2 className="small-title">Projects</h2>
         <div className="cards-container">
           {projectCards}
           {console.log(projectCards)}

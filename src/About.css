@@ -14,9 +14,7 @@
   width: 60%;
   padding: 0 0 0 2rem;
 }
-.about .small-title {
-  font-size: 2.5rem;
-}
+
 .about .title {
   font-size: 3rem;
 }
@@ -102,7 +100,7 @@
 
 .clicker:before {
   transition: transform 1s;
-  content: '\279C';
+  content: "\279C";
   transform: scaleX(1);
 }
 .clicker:hover:before {

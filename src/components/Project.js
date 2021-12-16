@@ -3,15 +3,17 @@ import "../componentStyles/Project.css";
 
 export default function Project({ title, icon, descriptionArray, link }) {
   const descriptionPList = descriptionArray.map((descriptionString, index) => (
-    <p key={index}>{descriptionString}</p>
+    <p class="description-text" key={index}>
+      {descriptionString}
+    </p>
   ));
 
   return (
     <div className="project">
+      <div className="icon">{icon}</div>
       <div className="project-inner">
-        <div className="icon">{icon}</div>
-        <h3 className="project-title"> {title} </h3>
-        <p className="project-description">{descriptionPList}</p>
+        <h3 className="project-title smaller-title"> {title} </h3>
+        <p className="project-description text">{descriptionPList}</p>
       </div>
       <a className="link" href={link}>
         Link to {title} project

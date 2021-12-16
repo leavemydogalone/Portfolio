@@ -1,5 +1,5 @@
 const redritTextObject = {
-  icon: "/",
+  icon: "R",
   title: "Redrit",
   descriptionArray: [
     "Clone of the popular website Reddit.",
