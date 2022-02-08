@@ -58,7 +58,7 @@
     opacity: 1;
   }
   100% {
-    transform: rotate(0deg) translateY(200px);
+    transform: rotate(0deg) translateY(400px);
   }
 }
 .expand {

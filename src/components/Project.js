@@ -15,7 +15,7 @@ export default function Project({ title, icon, descriptionArray, link }) {
         <h3 className="project-title smaller-title"> {title} </h3>
         <p className="project-description text">{descriptionPList}</p>
       </div>
-      <a className="link" href={link}>
+      <a className="link" href={link} target="blank">
         Link to {title} project
       </a>
     </div>

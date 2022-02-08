@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Projects.css";
 import Project from "./components/Project";
 import { projectObjectArray } from "./TextObjects/projectObjects";

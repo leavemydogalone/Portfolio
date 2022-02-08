@@ -9,5 +9,14 @@ const redritTextObject = {
   ],
   link: "https://redrit-75871.web.app/",
 };
-
-export const projectObjectArray = [redritTextObject];
+const workTextObject = {
+  icon: "W",
+  title: "Website Gallery",
+  descriptionArray: [
+    "Gallery of professional websites made for work.",
+    "Websites for medical practices and individual providers.",
+    "Majority of body content was made using custom HTML and CSS",
+  ],
+  link: "/",
+};
+export const projectObjectArray = [redritTextObject, workTextObject];
