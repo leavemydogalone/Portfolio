@@ -1,0 +1,23 @@
+.projects {
+  background: #88adff;
+  padding: 60px 0 30px;
+  .small-title {
+    text-align: center;
+  }
+  .project {
+    position: relative;
+    height: 33vh;
+    padding: 30px 0;
+    .big-letter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 30vh;
+    }
+    &.first {
+      .big-letter {
+        color: #a0beff;
+      }
+    }
+  }
+}

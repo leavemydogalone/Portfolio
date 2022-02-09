@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "./Projects.scss";
 import Project from "./components/Project";
 import { projectObjectArray } from "./TextObjects/projectObjects";
 
@@ -19,10 +19,10 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="container">
-        <h2 className="small-title">Projects</h2>
-        <div className="cards-container">
-          {projectCards}
-          {console.log(projectCards)}
+        <h2 className="small-title">Let's Break it Down</h2>
+        <div className="project first">
+          <span className="big-letter">N </span>
+          <h3 className="section-title">Nice Animations</h3>
         </div>
       </div>
     </section>
