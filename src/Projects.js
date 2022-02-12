@@ -16,15 +16,23 @@ export default function Projects() {
   //   />
   // ));
 
+  const standInGallery = ["first", "second", "third"];
+
   return (
     <section className="projects">
       <div className="container">
+        <h2 className="title">Why Hire Nik?</h2>
         <h2 className="small-title">Let's Break it Down</h2>
         <div className="project first">
-          <span className="big-letter">N</span>
-          <h3 className="section-title">Nice Designs</h3>
+          <div className="title-container">
+            <span className="big-letter">N</span>
+            <h3 className="section-title">Nice Designs</h3>
+          </div>
+
           <div className="gallery-container">
-            <div className="gallery-item"></div>
+            {standInGallery.map((thing) => (
+              <GalleryItem title={thing} />
+            ))}
           </div>
         </div>
       </div>

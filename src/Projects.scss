@@ -1,6 +1,9 @@
 .projects {
-  background: #88adff;
-  padding: 60px 0 30px;
+  background: #6176a4;
+
+  * {
+    color: #e8efff;
+  }
   .small-title {
     text-align: center;
     margin-bottom: 60px;
@@ -9,22 +12,47 @@
     position: relative;
     height: 33vh;
     padding: 30px 0;
-
-    .section-title {
-      font-size: 40px;
+    .title-container {
       position: relative;
-    }
-    .big-letter {
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: calc((100vw - 50px) * 0.35);
-      line-height: 50%;
+      .section-title {
+        font-size: 40px;
+        position: relative;
+      }
+      .big-letter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: calc((100vw - 50px) * 0.35);
+        line-height: 51%;
+      }
     }
     &.first {
       .big-letter {
-        color: #a0beff;
+        color: #6880b5;
       }
+    }
+
+    .gallery-container {
+      .gallery-item {
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .project {
+    display: flex;
+  }
+  .title-container {
+    width: 30%;
+  }
+  .gallery-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    .gallery-item {
+      width: 30%;
     }
   }
 }

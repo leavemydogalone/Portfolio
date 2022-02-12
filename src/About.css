@@ -1,4 +1,10 @@
+.about {
+  background: rgb(223, 233, 255);
+  overflow: hidden;
+  padding-top: 7vh;
+}
 .about .container {
+  padding-top: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
