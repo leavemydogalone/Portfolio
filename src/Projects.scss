@@ -1,6 +1,8 @@
+@use "variables";
+
 .projects {
   background: #6176a4;
-  padding-top: 20vh;
+  padding-top: 10vh;
   * {
     color: #e8efff;
   }
@@ -9,12 +11,12 @@
   }
   .small-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 141px;
     position: relative;
     &::after {
       content: "";
       height: 71px;
-      margin: 20px 0;
+      margin: 30px 0 20px;
       width: 1px;
       position: absolute;
       display: block;
@@ -31,7 +33,9 @@
       .section-title {
         font-size: 40px;
         position: relative;
+        text-shadow: 0 0 3px #00000063;
       }
+
       .big-letter {
         position: absolute;
         top: 0;
@@ -45,6 +49,24 @@
     .gallery-container {
       .gallery-item {
         position: relative;
+        opacity: 0;
+      }
+    }
+    &.inView {
+      .section-title {
+        animation: fadeInFromLeft 2s ease-in-out forwards;
+      }
+      .gallery-item {
+        animation: fadeInFromTop 2s ease-in-out forwards;
+      }
+      .gallery-item:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      .gallery-item:nth-child(2) {
+        animation-delay: 1.5s;
+      }
+      .gallery-item:nth-child(3) {
+        animation-delay: 2.5s;
       }
     }
   }

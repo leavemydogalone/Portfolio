@@ -4,7 +4,6 @@ import GalleryItem from "./components/GalleryItem";
 
 export default function Projects() {
   const projectsRef = useRef([]);
-  const [inView, setInView] = useState([false, false, false]);
 
   const options = {
     root: null,
@@ -12,8 +11,11 @@ export default function Projects() {
     rootMargin: "-25px 0px",
   };
   const observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach((entry) => {
-      console.log(entry);
+    entries.forEach((entry, index) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+      entry.target.classList.add("inView");
     });
   }, options);
 
@@ -73,10 +75,10 @@ export default function Projects() {
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
-                This was created using TypeScript and Reactjs. It is a simple
-                adn short game showing off some custom animations and styles.
-                Exemplary of the kinds of interaction and animation that help
-                make a web page/app come to life.
+                This was created using TypeScript and Reactjs. It is a short and
+                simple experience (maybe a game?) showing off some custom
+                animations and styles. Exemplary of the kinds of interaction and
+                animation that help make a web page/app come to life.
               </p>
             </div>
           </div>
