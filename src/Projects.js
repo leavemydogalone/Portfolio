@@ -83,6 +83,32 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <div
+          className="project third"
+          ref={(el) => {
+            projectsRef.current[2] = el;
+          }}
+        >
+          <div className="title-container">
+            <span className="big-letter">K</span>
+            <h3 className="section-title">Killer CRUD Skills?</h3>
+          </div>
+
+          <div className="gallery-container">
+            <div className="text-container ">
+              <h3 className="smallest-title">About this project</h3>
+              <p className="text">
+                This was created using TypeScript and Reactjs. It is a short and
+                simple experience (maybe a game?) showing off some custom
+                animations and styles. Exemplary of the kinds of interaction and
+                animation that help make a web page/app come to life.
+              </p>
+            </div>
+            <div className="image-container">
+              <img src=""></img>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

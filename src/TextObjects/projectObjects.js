@@ -19,4 +19,12 @@ const workTextObject = {
   ],
   link: "/",
 };
+
+const galleryObjexts = [
+  {
+    title: "Balcones Dermatology",
+    image: "/images/balcones.webp",
+  },
+];
+
 export const projectObjectArray = [redritTextObject, workTextObject];
