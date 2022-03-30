@@ -12,6 +12,8 @@ export const galleryObjects = [
     title: "The Chronic Pelvic Pain Center of North Virginia",
     imgSrc: chronic_pelvic,
     link: "https://www.pelvicpaindr.com/",
+    paragraph:
+      "Implemented design based on Figma file provided by outside designer",
   },
   {
     title: "Smart Brain and Health",

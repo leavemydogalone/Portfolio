@@ -47,16 +47,15 @@
     }
 
     .gallery-container {
-      .gallery-item {
-        position: relative;
-        opacity: 0;
-
-        .gallery-item-inner {
-          height: 100%;
+      .gallery-list {
+        .gallery-item {
+          position: relative;
+          opacity: 0;
+          padding: 20px;
           position: relative;
           transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08),
-            0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%),
+            0 4px 4px rgb(0 0 0 / 16%);
           border-radius: 3px;
           &:hover {
             transform: translateY(-4px);
@@ -64,25 +63,19 @@
               0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16),
               0 8px 8px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.07);
           }
+          .gallery-item-inner {
+            height: 100%;
+          }
+
           .image-container {
             img {
               width: 100%;
             }
-            .gallery-item-title {
-            }
-          }
-          a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            color: transparent;
-            &:hover {
-              cursor: pointer;
-            }
           }
         }
+      }
+      .gallery-display {
+        animation: fadeIn 0.3s forwards ease-in-out;
       }
     }
     &.inView {
@@ -120,9 +113,13 @@
 
     .gallery-list {
       width: 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
       .gallery-item {
         height: 30%;
-        margin-bottom: 2%;
+
         &:hover {
           cursor: pointer;
         }
@@ -130,9 +127,31 @@
     }
     .gallery-display {
       width: 49%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%),
+        0 4px 4px rgb(0 0 0 / 16%);
+      border-radius: 3px;
+      overflow: hidden;
       .gallery-display-inner {
-        img {
-          width: 100%;
+        height: 100%;
+        overflow: hidden;
+        .image-container {
+          display: block;
+          max-height: 50%;
+          overflow: hidden;
+          transition: max-height 1s ease-in-out;
+          &:hover {
+            max-height: 280px;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .text-display {
+          height: 50%;
+          padding: 20px;
         }
       }
     }

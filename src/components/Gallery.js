@@ -18,16 +18,22 @@ export default function Gallery() {
             />
           ))}
       </div>
-      <div className="gallery-display">
-        {displayItem && (
+      {displayItem && (
+        <div className="gallery-display">
           <div className="gallery-display-inner">
-            <img
-              src={displayItem.imgSrc}
-              alt={`${displayItem.title} website`}
-            />
+            <a className="image-container" href={displayItem.link}>
+              <img
+                src={displayItem.imgSrc}
+                alt={`${displayItem.title} website`}
+              />
+            </a>
+
+            <div className="text-display">
+              <p className="text">{displayItem.paragraph}</p>
+            </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
