@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Projects.scss";
+import Gallery from "./components/Gallery";
 import GalleryItem from "./components/GalleryItem";
+import { galleryObjects } from "./TextObjects/projectObjects";
 
 export default function Projects() {
   const projectsRef = useRef([]);
@@ -50,12 +52,7 @@ export default function Projects() {
             <span className="big-letter">N</span>
             <h3 className="section-title">Nice Designs</h3>
           </div>
-
-          <div className="gallery-container">
-            {standInGallery.map((thing, index) => (
-              <GalleryItem title={thing} key={index} />
-            ))}
-          </div>
+          <Gallery />
         </div>
         <div
           className="project second"

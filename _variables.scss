@@ -9,9 +9,9 @@
   }
 }
 
-@keyframes fadeInFromTop {
+@keyframes fadeInFromBottom {
   from {
-    transform: translateY(-200px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {

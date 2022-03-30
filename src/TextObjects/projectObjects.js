@@ -1,30 +1,21 @@
-const redritTextObject = {
-  icon: "R",
-  title: "Redrit",
-  descriptionArray: [
-    "Clone of the popular website Reddit.",
-    "Has full CRUD capabilities using Firebase Firestore.",
-    "React Router, user authentication, posts and comments.",
-    "Styling is not representative of my current abilities.",
-  ],
-  link: "https://redrit-75871.web.app/",
-};
-const workTextObject = {
-  icon: "W",
-  title: "Website Gallery",
-  descriptionArray: [
-    "Gallery of professional websites made for work.",
-    "Websites for medical practices and individual providers.",
-    "Majority of body content was made using custom HTML and CSS",
-  ],
-  link: "/",
-};
+import balcones from "../images/balcones.webp";
+import chronic_pelvic from "../images/chronic_pelvic.webp";
+import smart_brain from "../images/smart_brain.webp";
 
-const galleryObjexts = [
+export const galleryObjects = [
   {
     title: "Balcones Dermatology",
-    image: "/images/balcones.webp",
+    imgSrc: balcones,
+    link: "https://www.balconesdermatology.com/",
+  },
+  {
+    title: "The Chronic Pelvic Pain Center of North Virginia",
+    imgSrc: chronic_pelvic,
+    link: "https://www.pelvicpaindr.com/",
+  },
+  {
+    title: "Smart Brain and Health",
+    imgSrc: smart_brain,
+    link: "https://www.balconesdermatology.com/",
   },
 ];
-
-export const projectObjectArray = [redritTextObject, workTextObject];
