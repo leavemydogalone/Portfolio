@@ -55,7 +55,7 @@ export default function Projects() {
           <Gallery />
         </div>
         <div
-          className="project second"
+          className="project second simple"
           ref={(el) => {
             projectsRef.current[1] = el;
           }}
@@ -73,7 +73,7 @@ export default function Projects() {
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
                 This was created using TypeScript and Reactjs. It is a short and
-                simple experience (maybe a game?) showing off some custom
+                simple experience (maybe a game?) using some of my own
                 animations and styles. Exemplary of the kinds of interaction and
                 animation that help make a web page/app come to life.
               </p>
@@ -81,7 +81,7 @@ export default function Projects() {
           </div>
         </div>
         <div
-          className="project third"
+          className="project third simple"
           ref={(el) => {
             projectsRef.current[2] = el;
           }}
@@ -95,10 +95,11 @@ export default function Projects() {
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
-                This was created using TypeScript and Reactjs. It is a short and
-                simple experience (maybe a game?) showing off some custom
-                animations and styles. Exemplary of the kinds of interaction and
-                animation that help make a web page/app come to life.
+                This was created using React and Firebase as a backend. It is a
+                short and simple experience (maybe a game?) showing off some
+                custom animations and styles. Exemplary of the kinds of
+                interaction and animation that help make a web page/app come to
+                life.
               </p>
             </div>
             <div className="image-container">

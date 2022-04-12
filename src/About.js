@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.scss";
 import { useState, useRef } from "react";
 
 export default function About() {

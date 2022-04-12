@@ -122,3 +122,17 @@
   text-align: center;
   line-height: 110%;
 }
+
+@media screen and (max-width: 700px) {
+  .about {
+    .container {
+      display: block;
+      .image-container {
+        width: 100%;
+      }
+      .text-wrap {
+        width: 100%;
+      }
+    }
+  }
+}

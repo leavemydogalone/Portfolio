@@ -3,7 +3,8 @@ import GalleryItem from "../components/GalleryItem";
 import { galleryObjects } from "../TextObjects/projectObjects";
 
 export default function Gallery() {
-  const [displayItem, setDisplayItem] = useState(null);
+  const [displayItem, setDisplayItem] = useState(galleryObjects[0]);
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <div className="gallery-container">
       <div className="gallery-list">
@@ -12,6 +13,8 @@ export default function Gallery() {
             <GalleryItem
               title={thing.title}
               key={index}
+              isActive={activeTab === index}
+              setTabAsActiveTab={() => setActiveTab(index)}
               imgSrc={thing.imgSrc}
               link={thing.link}
               setDisplayItem={() => setDisplayItem(thing)}
@@ -29,7 +32,7 @@ export default function Gallery() {
             </a>
 
             <div className="text-display">
-              <p className="text">{displayItem.paragraph}</p>
+              <p className="text">Click image to visit website</p>
             </div>
           </div>
         </div>
