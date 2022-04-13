@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Projects.scss";
 import Gallery from "./components/Gallery";
-import GalleryItem from "./components/GalleryItem";
-import { galleryObjects } from "./TextObjects/projectObjects";
+
+import games from "./images/games.webp";
 
 export default function Projects() {
   const projectsRef = useRef([]);
@@ -51,6 +51,11 @@ export default function Projects() {
           <div className="title-container">
             <span className="big-letter">N</span>
             <h3 className="section-title">Nice Designs</h3>
+            <p className="sub-title-description text">
+              Websites created using PatientPop's proprietary templating
+              software for most javascript functionality. Page body content,
+              layout and styles created using custom HTML and CSS.
+            </p>
           </div>
           <Gallery />
         </div>
@@ -67,7 +72,14 @@ export default function Projects() {
 
           <div className="gallery-container">
             <div className="image-container">
-              <img src=""></img>
+              <a
+                href="https://lets-play-some-games.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                title="link to project website"
+              >
+                <img src={games} alt="screenshot of project website" />
+              </a>
             </div>
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
@@ -77,6 +89,24 @@ export default function Projects() {
                 animations and styles. Exemplary of the kinds of interaction and
                 animation that help make a web page/app come to life.
               </p>
+              <div class="link-bar">
+                <a
+                  href="https://github.com/leavemydogalone/LetsPlaySomeGames"
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://lets-play-some-games.herokuapp.com/"
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Website
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -95,15 +125,38 @@ export default function Projects() {
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
-                This was created using React and Firebase as a backend. It is a
-                short and simple experience (maybe a game?) showing off some
-                custom animations and styles. Exemplary of the kinds of
-                interaction and animation that help make a web page/app come to
-                life.
+                Older project created using React and Firebase as a backend.
+                Full CRUD capabilities, Users/login, form validation, react
+                router.
               </p>
+              <div class="link-bar">
+                <a
+                  href="https://github.com/leavemydogalone/redrit"
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://redrit-75871.web.app/"
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Website
+                </a>
+              </div>
             </div>
             <div className="image-container">
-              <img src=""></img>
+              <a
+                href="https://redrit-75871.web.app/"
+                target="_blank"
+                rel="noreferrer"
+                title="link to project website"
+              >
+                <img src={games} alt="screenshot of project website" />
+              </a>
             </div>
           </div>
         </div>

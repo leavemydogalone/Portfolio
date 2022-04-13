@@ -24,7 +24,12 @@ export default function Gallery() {
       {displayItem && (
         <div className="gallery-display">
           <div className="gallery-display-inner">
-            <a className="image-container" href={displayItem.link}>
+            <a
+              className="image-container"
+              href={displayItem.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={displayItem.imgSrc}
                 alt={`${displayItem.title} website`}

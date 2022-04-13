@@ -15,6 +15,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+img {
+  width: 100%;
+}
 button {
   border: none;
 }
