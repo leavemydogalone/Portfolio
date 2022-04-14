@@ -78,7 +78,11 @@ export default function Projects() {
                 rel="noreferrer"
                 title="link to project website"
               >
-                <img src={games} alt="screenshot of project website" />
+                <img
+                  loading="lazy"
+                  src={games}
+                  alt="screenshot of project website"
+                />
               </a>
             </div>
             <div className="text-container ">
@@ -155,7 +159,11 @@ export default function Projects() {
                 rel="noreferrer"
                 title="link to project website"
               >
-                <img src={games} alt="screenshot of project website" />
+                <img
+                  loading="lazy"
+                  src={games}
+                  alt="screenshot of project website"
+                />
               </a>
             </div>
           </div>

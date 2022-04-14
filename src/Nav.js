@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 
 export default function Nav() {
+  // const navRef = useRef();
+  // useLayoutEffect(() => {
+  //   setTimeout(() => {
+  //     navRef.current.style.position = "fixed";
+  //   }, 2000);
+  // }, []);
   return (
     <nav>
       <div class="nav-inner">

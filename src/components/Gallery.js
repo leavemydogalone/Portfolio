@@ -31,6 +31,7 @@ export default function Gallery() {
               rel="noreferrer"
             >
               <img
+                loading="lazy"
                 src={displayItem.imgSrc}
                 alt={`${displayItem.title} website`}
               />

@@ -2,10 +2,9 @@
 .about {
   background: rgb(223, 233, 255);
   overflow: hidden;
-  padding-top: 7vh;
+  // padding-top: 7vh;
 }
 .about .container {
-  padding-top: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +20,9 @@
   filter: drop-shadow(2px 4px 4px grey);
 }
 @media screen and (max-width: 800px) {
+  .about .container {
+    padding-top: 7vh;
+  }
   .about .image-container {
     width: 70%;
     max-width: 300px;

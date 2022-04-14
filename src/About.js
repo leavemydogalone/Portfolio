@@ -64,7 +64,11 @@ export default function About() {
     <section className="about">
       <div className="container">
         <figure className="image-container">
-          <img src={profile} alt="its me. But actually a giraffe." />
+          <img
+            loading="lazy"
+            src={profile}
+            alt="its me. But actually a giraffe."
+          />
         </figure>
         <div className="text-wrap">
           <h2 className="small-title">Welcome!</h2>
