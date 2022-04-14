@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Nav() {
   return (
@@ -10,13 +10,31 @@ export default function Nav() {
 
         <ul className="links-list">
           <li>
-            <a href="mailto:niklasport88@gmail.com">niklasport88@gmail.com</a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:niklasport88@gmail.com"
+            >
+              niklasport88@gmail.com
+            </a>
           </li>
           <li>
-            <a>LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/niklas-port-a8898118a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a>Resume</a>
+            <a
+              href="https://drive.google.com/file/d/119s-71_J-k2cLRuNH_YASWJOk42lZS6z/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </div>

@@ -1,3 +1,4 @@
+@use "variables";
 .about {
   background: rgb(223, 233, 255);
   overflow: hidden;
@@ -10,9 +11,29 @@
   align-items: center;
 }
 .about .image-container {
-  width: 50%;
+  width: 514px;
+  max-width: 30%;
+  margin: auto;
+  opacity: 0;
+  animation: fadeInFromBottom 2s ease-in-out forwards;
 }
 
+@media screen and (max-width: 800px) {
+  .about .image-container {
+    width: 70%;
+    max-width: 300px;
+
+    margin-bottom: 10px;
+    img {
+      margin-left: 9px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .image-container {
+    max-width: 200px;
+  }
+}
 .about .image-container img {
   width: 100%;
 }
@@ -23,8 +44,26 @@
 
 .about .text {
   font-size: 1.25rem;
-  padding: 2rem 0 0;
   max-width: 60ch;
+  margin-top: 15px;
+}
+@media screen and (max-width: 800px) {
+  .about {
+    .small-title {
+      text-align: center;
+    }
+    .title {
+      text-align: center;
+      font-size: 2rem;
+    }
+    .text {
+      line-height: 110%;
+      text-align: center;
+    }
+    .clicker-container {
+      margin: 3rem auto;
+    }
+  }
 }
 .clicker-container {
   width: 300px;
@@ -123,7 +162,7 @@
   line-height: 110%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .about {
     .container {
       display: block;
