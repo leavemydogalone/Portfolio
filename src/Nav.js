@@ -1,11 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import logo from "./images/nik_logo.png";
+import "./Nav.scss";
 
 export default function Nav() {
   return (
     <header>
       <nav class="nav-inner">
         <figure className="logo-container">
-          <img src="" alt="" />
+          <img src={logo} alt="logo" />
         </figure>
 
         <ul className="links-list">

@@ -1,8 +1,10 @@
 @use "variables";
 .about {
-  background: rgb(223, 233, 255);
+  background: #eaf1ff;
   overflow: hidden;
   // padding-top: 7vh;
+  min-height: 85vh;
+  padding-bottom: 3vh;
 }
 .about .container {
   display: flex;
@@ -11,7 +13,7 @@
 }
 .about .image-container {
   width: 514px;
-  max-width: 30%;
+  max-width: 35%;
   margin: auto;
   opacity: 0;
   animation: fadeInFromBottom 2s ease-in-out forwards;
@@ -19,9 +21,20 @@
 .about .image-container img {
   filter: drop-shadow(2px 4px 4px grey);
 }
+.about {
+  .title {
+    color: #6880b5;
+  }
+  .small-title {
+    color: #1c2f58;
+  }
+}
 @media screen and (max-width: 800px) {
+  .about {
+    min-height: 93vh;
+  }
   .about .container {
-    padding: 7vh 0;
+    padding: 1vh 15px 7vh;
   }
   .about .image-container {
     width: 70%;
@@ -29,7 +42,6 @@
 
     margin-bottom: 10px;
     img {
-      margin-left: 9px;
     }
   }
 }

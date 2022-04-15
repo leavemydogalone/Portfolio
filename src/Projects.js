@@ -3,6 +3,7 @@ import "./Projects.scss";
 import Gallery from "./components/Gallery";
 
 import games from "./images/games.webp";
+import redrit from "./images/redrit.webp";
 
 export default function Projects() {
   const projectsRef = useRef([]);
@@ -160,7 +161,7 @@ export default function Projects() {
               >
                 <img
                   loading="lazy"
-                  src={games}
+                  src={redrit}
                   alt="screenshot of project website"
                 />
               </a>

@@ -21,15 +21,7 @@ img {
 button {
   border: none;
 }
-header {
-  background: rgb(234 241 255);
 
-  box-shadow: 0 1px 2px 0px #80808052;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 997;
-}
 section {
   min-height: 93vh;
   display: flex;
@@ -39,24 +31,4 @@ section {
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
-}
-.nav-inner {
-  height: 7vh;
-  max-width: 1300px;
-
-  padding: 20px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo-container {
-  min-width: 20px;
-}
-.links-list {
-  list-style: none;
-  display: flex;
-}
-.links-list li {
-  margin: 0 10px;
 }
