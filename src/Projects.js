@@ -12,6 +12,7 @@ export default function Projects() {
     threshold: 0.1,
     rootMargin: "-25px 0px",
   };
+
   const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry, index) => {
       if (!entry.isIntersecting) {
@@ -34,8 +35,6 @@ export default function Projects() {
         });
     };
   }, [projectsRef.current, options]);
-
-  const standInGallery = ["first", "second", "third"];
 
   return (
     <section className="projects">

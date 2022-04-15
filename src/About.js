@@ -1,40 +1,45 @@
 import React from "react";
 import "./About.scss";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import profile from "./images/ver2.webp";
 
 export default function About() {
-  // const app = useRef();
-  // const header = document.querySelector("header");
+  const about = useRef(null);
 
-  // const options = {
-  //   root: null,
-  //   threshold: 0.1,
-  //   rootMargin: "-200px 0px 0px 0px",
-  // };
+  const options = {
+    root: null,
+    threshold: 0.8,
+    rootMargin: "-100px 0px 0px 0px",
+  };
 
-  // const sectionOneObserver = new IntersectionObserver(function (
-  //   entries,
-  //   sectionOneObserver
-  // ) {
-  //   entries.forEach((entry) => {
-  //     if (!entry.isIntersecting) {
-  //       header && header.classList.add("nav-scrolled");
-  //       console.log("scrool");
-  //     } else {
-  //       header && header.classList.remove("nav-scrolled");
-  //     }
-  //   });
-  // },
-  // options);
+  const sectionOneObserver = new IntersectionObserver(function (
+    entries,
+    sectionOneObserver
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        const header = document.querySelector("header");
+        header.classList.add("nav-scrolled");
+        console.log("scrool");
+      } else {
+        const header = document.querySelector("header");
+        header.classList.remove("nav-scrolled");
+        console.log("remove");
+      }
+    });
+  },
+  options);
 
-  // useEffect(() => {
-  //   if (app.current) sectionOneObserver.observe(app.current);
+  useEffect(() => {
+    if (about.current) {
+      sectionOneObserver.observe(about.current);
+      console.log("watching");
+    }
 
-  //   return () => {
-  //     if (app.current) sectionOneObserver.unobserve(app.current);
-  //   };
-  // }, [app.current, options]);
+    return () => {
+      if (about.current) sectionOneObserver.unobserve(about.current);
+    };
+  }, [about.current, options]);
 
   const clicker = useRef(null);
   const [insideText, setInsideText] = useState("Click the arrow");
@@ -93,7 +98,7 @@ export default function About() {
   };
 
   return (
-    <section className="about">
+    <section className="about" ref={about}>
       <div className="container">
         <figure className="image-container">
           <img
