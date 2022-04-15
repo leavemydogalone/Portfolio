@@ -1,15 +1,9 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function Nav() {
-  // const navRef = useRef();
-  // useLayoutEffect(() => {
-  //   setTimeout(() => {
-  //     navRef.current.style.position = "fixed";
-  //   }, 2000);
-  // }, []);
   return (
-    <nav>
-      <div class="nav-inner">
+    <header>
+      <nav class="nav-inner">
         <figure className="logo-container">
           <img src="" alt="" />
         </figure>
@@ -43,7 +37,7 @@ export default function Nav() {
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
