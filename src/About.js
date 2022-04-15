@@ -4,6 +4,38 @@ import { useState, useRef } from "react";
 import profile from "./images/ver2.webp";
 
 export default function About() {
+  // const app = useRef();
+  // const header = document.querySelector("header");
+
+  // const options = {
+  //   root: null,
+  //   threshold: 0.1,
+  //   rootMargin: "-200px 0px 0px 0px",
+  // };
+
+  // const sectionOneObserver = new IntersectionObserver(function (
+  //   entries,
+  //   sectionOneObserver
+  // ) {
+  //   entries.forEach((entry) => {
+  //     if (!entry.isIntersecting) {
+  //       header && header.classList.add("nav-scrolled");
+  //       console.log("scrool");
+  //     } else {
+  //       header && header.classList.remove("nav-scrolled");
+  //     }
+  //   });
+  // },
+  // options);
+
+  // useEffect(() => {
+  //   if (app.current) sectionOneObserver.observe(app.current);
+
+  //   return () => {
+  //     if (app.current) sectionOneObserver.unobserve(app.current);
+  //   };
+  // }, [app.current, options]);
+
   const clicker = useRef(null);
   const [insideText, setInsideText] = useState("Click the arrow");
   const [number, setNumber] = useState(0);
