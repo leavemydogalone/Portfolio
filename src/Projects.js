@@ -122,7 +122,7 @@ export default function Projects() {
         >
           <div className="title-container">
             <span className="big-letter">K</span>
-            <h3 className="section-title">Killer CRUD Skills?</h3>
+            <h3 className="section-title">Killer CRUD Skills</h3>
           </div>
 
           <div className="gallery-container">
