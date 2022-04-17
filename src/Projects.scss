@@ -130,9 +130,13 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
       0 4px 4px rgba(0, 0, 0, 0.16);
     height: fit-content;
-    transform-origin: 50% 50%;
-    transform: rotatey(10deg);
-    transform-style: preserve-3d;
+    outline-offset: -3px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      animation: moveAround 5s ease-in-out infinite;
+    }
+
     img {
       display: block;
       border-radius: 3px;

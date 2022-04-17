@@ -46,3 +46,16 @@
     transform: translateY(-2px);
   }
 }
+
+@keyframes moveAround {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
