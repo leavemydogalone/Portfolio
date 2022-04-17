@@ -41,6 +41,7 @@ export default function About() {
     };
   }, [about.current, options]);
 
+  // clicker section. Should be moved to own component
   const clicker = useRef(null);
   const [insideText, setInsideText] = useState("Click the arrow");
   const [number, setNumber] = useState(0);
