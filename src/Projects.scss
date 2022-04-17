@@ -235,12 +235,23 @@
           }
         }
       }
+      &.first {
+        .sub-title-description {
+          margin-top: 2px;
+        }
+        .title-container {
+          margin-bottom: 22px;
+        }
+      }
     }
   }
   .projects {
     .project {
       &.simple {
-        .text-container {
+        .image-container {
+          margin-bottom: 10px;
+        }
+        .small-title {
           margin-bottom: 15px;
         }
       }

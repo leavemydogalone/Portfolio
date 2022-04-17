@@ -13,20 +13,18 @@ export default function About() {
   };
 
   const sectionOneObserver = new IntersectionObserver(function (
-    entries,
+    entry,
     sectionOneObserver
   ) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        const header = document.querySelector("header");
-        header.classList.add("nav-scrolled");
-        console.log("scrool");
-      } else {
-        const header = document.querySelector("header");
-        header.classList.remove("nav-scrolled");
-        console.log("remove");
-      }
-    });
+    if (!entry.isIntersecting) {
+      const header = document.querySelector("header");
+      header.classList.add("nav-scrolled");
+      console.log("scrool");
+    } else {
+      const header = document.querySelector("header");
+      header.classList.remove("nav-scrolled");
+      console.log("remove");
+    }
   },
   options);
 
@@ -103,7 +101,7 @@ export default function About() {
       <div className="container">
         <figure className="image-container">
           <img
-            loading="lazy"
+            // loading="lazy"
             src={profile}
             alt="its me. But actually a giraffe."
           />

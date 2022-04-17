@@ -28,13 +28,31 @@ header {
   }
   .links-list li {
     margin: 0 10px;
+    font-size: 18px;
+
+    a {
+      color: #6565c9;
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 }
 
 header {
   &.nav-scrolled {
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
     .nav-inner {
-      height: 5vh;
+      height: 13vh;
+    }
+    .logo-container {
+      width: 46px;
+    }
+    .links-list li {
+      margin: 0 14px;
+      font-size: 16px;
     }
   }
 }
