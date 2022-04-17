@@ -12,13 +12,7 @@ export default function Nav() {
 
         <ul className="links-list">
           <li>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="mailto:niklasport88@gmail.com"
-            >
-              niklasport88@gmail.com
-            </a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a

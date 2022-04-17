@@ -11,7 +11,7 @@ export default function Projects() {
   const options = {
     root: null,
     threshold: 0.1,
-    rootMargin: "-25px 0px",
+    rootMargin: "-75px 0px",
   };
 
   const observer = new IntersectionObserver(function (entries, observer) {
@@ -126,6 +126,20 @@ export default function Projects() {
           </div>
 
           <div className="gallery-container">
+            <div className="image-container">
+              <a
+                href="https://redrit-75871.web.app/"
+                target="_blank"
+                rel="noreferrer"
+                title="link to project website"
+              >
+                <img
+                  loading="lazy"
+                  src={redrit}
+                  alt="screenshot of project website"
+                />
+              </a>
+            </div>
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
@@ -151,20 +165,6 @@ export default function Projects() {
                   Website
                 </a>
               </div>
-            </div>
-            <div className="image-container">
-              <a
-                href="https://redrit-75871.web.app/"
-                target="_blank"
-                rel="noreferrer"
-                title="link to project website"
-              >
-                <img
-                  loading="lazy"
-                  src={redrit}
-                  alt="screenshot of project website"
-                />
-              </a>
             </div>
           </div>
         </div>
