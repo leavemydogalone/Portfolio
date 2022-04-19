@@ -3,6 +3,8 @@
 .projects {
   background: #6176a4;
   padding-top: 10vh;
+  padding-bottom: 10vh;
+
   * {
     color: #e8efff;
   }
@@ -217,6 +219,8 @@
 
 @media screen and (max-width: 800px) {
   .projects {
+    padding-bottom: 0;
+
     .small-title {
       margin-bottom: 115px;
     }

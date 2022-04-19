@@ -2,8 +2,8 @@
 .about {
   background: #f9f9fb;
   overflow: hidden;
-  // padding-top: 7vh;
-  min-height: 85vh;
+  padding-top: 7vh;
+  min-height: 100vh;
   padding-bottom: 3vh;
 }
 .about .container {
@@ -13,7 +13,7 @@
 }
 .about .image-container {
   width: 514px;
-  max-width: 30%;
+  max-width: 38%;
   margin: auto;
   opacity: 0;
   animation: fadeInFromBottom 2s ease-in forwards;
@@ -35,7 +35,7 @@
 @media screen and (max-width: 800px) {
   .about {
     min-height: 93vh;
-    padding-top: 8vh;
+    padding-top: 16vh;
   }
   .about .container {
     padding: 1vh 15px 7vh;

@@ -2,7 +2,7 @@
 
 header {
   background-color: #fff;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 997;
@@ -10,7 +10,9 @@ header {
 
   transition: all 0.2s ease-in-out;
   .nav-inner {
-    height: 7vh;
+    position: relative;
+    overflow: hidden;
+    height: 10vh;
     max-width: 1300px;
     padding: 20px;
     margin: auto;
@@ -27,11 +29,29 @@ header {
     display: flex;
   }
   .links-list li {
-    margin: 0 10px;
+    margin: 0px 6px;
     font-size: 18px;
-
+    background: #6880b5;
+    padding: 7px 10px;
+    border-radius: 4px;
+    &::after {
+      content: "";
+      width: 80%;
+      margin: auto;
+      border-bottom: 1px solid #9393f13d;
+      height: 1px;
+      display: block;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      filter: brightness(1.02);
+      &::after {
+        width: 100%;
+        border-color: white;
+      }
+    }
     a {
-      color: #6565c9;
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -48,10 +68,15 @@ header {
       height: 13vh;
     }
     .logo-container {
-      width: 46px;
+      width: 158px;
+      position: absolute;
+      opacity: 0.1;
+    }
+    .links-list {
+      margin: auto;
     }
     .links-list li {
-      margin: 0 14px;
+      margin: 0px 6px;
       font-size: 16px;
     }
   }
