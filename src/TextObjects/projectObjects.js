@@ -18,6 +18,6 @@ export const galleryObjects = [
   {
     title: "Smart Brain and Health",
     imgSrc: smart_brain,
-    link: "https://www.balconesdermatology.com/",
+    link: "https://www.smartbrainandhealth.com/",
   },
 ];

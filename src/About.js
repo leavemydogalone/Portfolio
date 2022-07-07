@@ -19,11 +19,9 @@ export default function About() {
     if (!entry.isIntersecting) {
       const header = document.querySelector("header");
       header.classList.add("nav-scrolled");
-      console.log("scrool");
     } else {
       const header = document.querySelector("header");
       header.classList.remove("nav-scrolled");
-      console.log("remove");
     }
   },
   options);
@@ -31,7 +29,6 @@ export default function About() {
   useEffect(() => {
     if (about.current) {
       sectionOneObserver.observe(about.current);
-      console.log("watching");
     }
 
     return () => {
@@ -110,11 +107,11 @@ export default function About() {
           <h2 className="small-title">Welcome!</h2>
           <h1 className="title">My name is Nik Port</h1>
           <p className="text">
-            I am a front-end engineer/web designer
+            I am a front-end engineer & web designer with more than two years of
+            experience creating websites and applications
             <p class="text">
-              I am currently working as a web designer, but have a passion for
-              implementing ideas and creating fun and interactive web
-              experiences
+              I have a passion for implementing ideas and creating fun and
+              interactive web experiences
             </p>
             <p class="text">
               Just look at this fun and interative experience, here:

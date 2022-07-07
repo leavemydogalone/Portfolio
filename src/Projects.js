@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery";
 
 import games from "./images/games.webp";
 import redrit from "./images/redrit.webp";
+import convo1 from "./images/convo1.webp";
 
 export default function Projects() {
   const projectsRef = useRef([]);
@@ -122,7 +123,7 @@ export default function Projects() {
         >
           <div className="title-container">
             <span className="big-letter">K</span>
-            <h3 className="section-title">Killer CRUD Skills</h3>
+            <h3 className="section-title">"K"ool & "K"ollaborative</h3>
           </div>
 
           <div className="gallery-container">
@@ -135,36 +136,24 @@ export default function Projects() {
               >
                 <img
                   loading="lazy"
-                  src={redrit}
+                  style={{ border: "4px solid #3f3d56" }}
+                  src={convo1}
                   alt="screenshot of project website"
                 />
               </a>
             </div>
             <div className="text-container ">
-              <h3 className="smallest-title">About this project</h3>
               <p className="text">
-                Older project created using React and Firebase as a backend.
-                Full CRUD capabilities, Users/login, form validation, react
-                router.
+                I think my greatest trait is my ability to mesh with just about
+                any team. I loved getting involved and helping out wherever and
+                whenever possible.
+                <br />
+                <br />I am a laid-back guy when it comes to interacting with
+                other people and try my best to bring the best out of those
+                around me. Working together to create something awesome
+                <em> is </em>
+                awesome.
               </p>
-              <div class="link-bar">
-                <a
-                  href="https://github.com/leavemydogalone/redrit"
-                  className="link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://redrit-75871.web.app/"
-                  className="link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Website
-                </a>
-              </div>
             </div>
           </div>
         </div>

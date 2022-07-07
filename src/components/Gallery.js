@@ -36,10 +36,6 @@ export default function Gallery() {
                 alt={`${displayItem.title} website`}
               />
             </a>
-
-            <div className="text-display">
-              <p className="text">Click image to visit website</p>
-            </div>
           </div>
         </div>
       )}

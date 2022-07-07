@@ -25,6 +25,15 @@ export default function Nav() {
           </li>
           <li>
             <a
+              href="https://www.github.com/leavemydogalone/Portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a
               href="https://drive.google.com/file/d/119s-71_J-k2cLRuNH_YASWJOk42lZS6z/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
