@@ -144,13 +144,12 @@ export default function Projects() {
             </div>
             <div className="text-container ">
               <p className="text">
-                I think my greatest trait is my ability to mesh with just about
-                any team. I loved getting involved and helping out wherever and
-                whenever possible.
+                My greatest attribute is my ability to mesh with any team. I am
+                always receptive to our peoples' input, love getting involved
+                and am always ready to help out wherever and whenever possible.
                 <br />
-                <br />I am a laid-back guy when it comes to interacting with
-                other people and try my best to bring the best out of those
-                around me. Working together to create something awesome
+                <br />I am a laid-back guy and try my best to bring the best out
+                of those around me. Working together to create something awesome
                 <em> is </em>
                 awesome.
               </p>
