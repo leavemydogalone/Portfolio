@@ -128,19 +128,12 @@ export default function Projects() {
 
           <div className="gallery-container">
             <div className="image-container">
-              <a
-                href="https://redrit-75871.web.app/"
-                target="_blank"
-                rel="noreferrer"
-                title="link to project website"
-              >
-                <img
-                  loading="lazy"
-                  style={{ border: "4px solid #3f3d56" }}
-                  src={convo1}
-                  alt="screenshot of project website"
-                />
-              </a>
+              <img
+                loading="lazy"
+                style={{ border: "4px solid #3f3d56" }}
+                src={convo1}
+                alt="screenshot of project website"
+              />
             </div>
             <div className="text-container ">
               <p className="text">
