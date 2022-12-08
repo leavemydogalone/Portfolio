@@ -91,7 +91,8 @@ export default function Projects() {
                 React, Express, Socket.io, MongoDB. Sign up and {""}
                 <strong>Click the Button</strong>! Clicks are updated in
                 realtime and progress is saved so you can always come back to
-                click some more.
+                click some more. (If game is down, please contact developer as
+                Dyno may need to be spun up)
               </p>
               <div class="link-bar">
                 <a
