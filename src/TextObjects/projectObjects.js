@@ -1,8 +1,13 @@
 import balcones from "../images/balcones.webp";
 import chronic_pelvic from "../images/chronic_pelvic.webp";
-import smart_brain from "../images/smart_brain.webp";
+import pinnacle from "../images/pinnacle.webp";
 
 export const galleryObjects = [
+  {
+    title: "Pinnacle Care Internal Medicine",
+    imgSrc: pinnacle,
+    link: "https://www.pinnaclecareinternalmedicine.net/",
+  },
   {
     title: "Balcones Dermatology",
     imgSrc: balcones,
@@ -14,10 +19,5 @@ export const galleryObjects = [
     link: "https://www.pelvicpaindr.com/",
     paragraph:
       "Implemented design based on Figma file provided by outside designer",
-  },
-  {
-    title: "Smart Brain and Health",
-    imgSrc: smart_brain,
-    link: "https://www.smartbrainandhealth.com/",
   },
 ];

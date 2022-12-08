@@ -2,8 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./Projects.scss";
 import Gallery from "./components/Gallery";
 
-import games from "./images/games.webp";
-import redrit from "./images/redrit.webp";
+import games from "./images/click.webp";
 import convo1 from "./images/convo1.webp";
 
 export default function Projects() {
@@ -51,7 +50,7 @@ export default function Projects() {
         >
           <div className="title-container">
             <span className="big-letter">N</span>
-            <h3 className="section-title">Nice Designs</h3>
+            <h3 className="section-title">Neat Websites</h3>
             <p className="sub-title-description text">
               Websites created using PatientPop's proprietary templating
               software for most javascript functionality. Page body content,
@@ -74,7 +73,7 @@ export default function Projects() {
           <div className="gallery-container">
             <div className="image-container">
               <a
-                href="https://lets-play-some-games.herokuapp.com/"
+                href="https://worthy-bridge-production.up.railway.app/"
                 target="_blank"
                 rel="noreferrer"
                 title="link to project website"
@@ -89,14 +88,14 @@ export default function Projects() {
             <div className="text-container ">
               <h3 className="smallest-title">About this project</h3>
               <p className="text">
-                This was created using TypeScript and Reactjs. It is a short and
-                simple experience (maybe a game?) using some of my own
-                animations and styles. Exemplary of the kinds of interaction and
-                animation that help make a web page/app come to life.
+                React, Express, Socket.io, MongoDB. Sign up and {""}
+                <strong>Click the Button</strong>! Clicks are updated in
+                realtime and progress is saved so you can always come back to
+                click some more.
               </p>
               <div class="link-bar">
                 <a
-                  href="https://github.com/leavemydogalone/LetsPlaySomeGames"
+                  href="https://github.com/leavemydogalone/click_v2"
                   className="link"
                   target="_blank"
                   rel="noreferrer"
@@ -104,7 +103,7 @@ export default function Projects() {
                   GitHub
                 </a>
                 <a
-                  href="https://lets-play-some-games.herokuapp.com/"
+                  href="https://worthy-bridge-production.up.railway.app/"
                   className="link"
                   target="_blank"
                   rel="noreferrer"
@@ -144,14 +143,14 @@ export default function Projects() {
             </div>
             <div className="text-container ">
               <p className="text">
-                My greatest attribute is my ability to mesh with any team. I am
-                always receptive to our peoples' input, love getting involved
-                and am always ready to help out wherever and whenever possible.
+                Put me on any team and watch us succeed. I am self-sufficient
+                when necessary but always a team player. I am results driven and
+                always looking for ways to improve myself and the teams I work
+                on.
                 <br />
-                <br />I am a laid-back guy and try my best to bring the best out
-                of those around me. Working together to create something awesome
-                <em> is </em>
-                awesome.
+                <br />I am one of the most laid back people, no matter the
+                project or deadline. I am always ready to supply my positive
+                attitude to bring the best out of those around me.
               </p>
             </div>
           </div>
