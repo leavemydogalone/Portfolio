@@ -137,7 +137,7 @@ export default function Projects() {
             </div>
             <div className="text-container ">
               <p className="text">
-                I'm the kind of person who loves working with others towards a common goal. I'm confident in my abilities to work independently when needed, but I also thrive when collaborating with my team. Results are important to me, so I'm always looking for ways to improve my own performance and that of my team. I approach every project and deadline with a positive attitude, which tends to rub off on those around me.
+                I'm the kind of person who loves working with others towards a common goal. I'm confident in my abilities to work independently when needed, but I also thrive when collaborating with my team. <br/> Results are important to me, so I'm always looking for ways to improve my own performance and that of my team. I approach every project and deadline with a positive attitude, which tends to rub off on those around me.
               </p>
             </div>
           </div>
