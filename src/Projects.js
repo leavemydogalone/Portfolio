@@ -137,14 +137,7 @@ export default function Projects() {
             </div>
             <div className="text-container ">
               <p className="text">
-                Put me on any team and watch us succeed. I am self-sufficient
-                when necessary but always a team player. I am results driven and
-                always looking for ways to improve myself and the teams I work
-                on.
-                <br />
-                <br />I am one of the most laid back people, no matter the
-                project or deadline. I am always ready to supply my positive
-                attitude to bring the best out of those around me.
+                I'm the kind of person who loves working with others towards a common goal. I'm confident in my abilities to work independently when needed, but I also thrive when collaborating with my team. Results are important to me, so I'm always looking for ways to improve my own performance and that of my team. I approach every project and deadline with a positive attitude, which tends to rub off on those around me.
               </p>
             </div>
           </div>
