@@ -31,7 +31,7 @@ header {
   .links-list li {
     margin: 0px 6px;
     font-size: 18px;
-    background: #6880b5;
+    // background: #6880b5;
     padding: 7px 10px;
     border-radius: 4px;
     position: relative;
@@ -48,11 +48,11 @@ header {
       filter: brightness(1.02);
       &::after {
         width: 100%;
-        border-color: white;
+        border-color: #354569;
       }
     }
     a {
-      color: #ffffff;
+      color: #3e4d6e;
       text-decoration: none;
       font-weight: bold;
     }
