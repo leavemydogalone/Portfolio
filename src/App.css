@@ -10,3 +10,17 @@
 .text {
   font-size: 1.25rem;
 }
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .small-title {
+    font-size: 2rem;
+  }
+  .smaller-title {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}

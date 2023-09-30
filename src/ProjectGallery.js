@@ -63,9 +63,6 @@ export default function ProjectGallery() {
     },
   ];
 
-  let delay = (index) => {
-    return 0.25 * index + 0.25;
-  };
   return (
     <section className="gallery">
       <div className="container">
@@ -77,7 +74,6 @@ export default function ProjectGallery() {
               ref={(el) => {
                 projectsRef.current[index] = el;
               }}
-              style={{ animationDelay: `${delay(index)}s` }}
             >
               <img src={item.img} alt={`project ${index}`} />
               <h4 className="projectTitle">{item.name}</h4>
