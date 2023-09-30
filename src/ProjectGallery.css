@@ -1,7 +1,15 @@
 .gallery {
   min-height: 50vh;
   padding: 10vh 0 12vh;
+  background: linear-gradient(
+    60deg,
+    transparent 45%,
+    #f4f7ff 45%,
+    #f4f7ff 55%,
+    transparent 55%
+  );
 }
+
 .container {
   width: 1300px;
   max-width: 100%;
@@ -12,7 +20,7 @@
   .flexGallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 40px;
   }
   .galleryItem {
     display: flex;
@@ -21,6 +29,8 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
       0 4px 8px rgba(0, 0, 0, 0.07);
     border-radius: 5px;
+    background-color: white;
+    border: 4px solid #e9f0ff;
   }
   & h3 {
     color: #1c2f58;
@@ -33,7 +43,7 @@
     width: 100%;
     aspect-ratio: 2/1.5;
     object-fit: cover;
-    border: 4px solid #e9f0ff;
+
     border-radius: 5px;
   }
   & h4 {
@@ -43,7 +53,7 @@
   }
   .stack {
     /* color: #6880b5; */
-    margin: 0 0 10px;
+    margin: 0 0 20px;
   }
   .linkContainer {
     margin-bottom: 0;
@@ -53,5 +63,17 @@
   }
   & a {
     margin: 0 10px 5px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    background: linear-gradient(
+      70deg,
+      transparent 45%,
+      #f4f7ff 45%,
+      #f4f7ff 55%,
+      transparent 55%
+    );
   }
 }
