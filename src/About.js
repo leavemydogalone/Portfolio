@@ -107,8 +107,8 @@ export default function About() {
           <h2 className="small-title">Welcome!</h2>
           <h1 className="title">My name is Nik Port</h1>
           <p className="text">
-            I am a front-end engineer & web designer with more than two years of
-            experience creating websites and applications
+            I am a software engineer with more than two years of experience
+            creating websites and applications
             <p class="text">
               I have a passion for implementing ideas and creating fun and
               interactive web experiences
