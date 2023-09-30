@@ -102,6 +102,8 @@
         .gallery-display-inner {
           .image-container {
             display: block;
+            border-radius: 3px;
+            overflow: hidden;
             img {
               margin-bottom: -1px;
               display: block;
@@ -121,10 +123,10 @@
     &.inView {
       .section-title,
       .sub-title-description {
-        animation: fadeInFromLeft 2s ease-in-out forwards;
+        animation: fadeInFromLeft 1s ease-in-out forwards;
       }
       .gallery-container {
-        animation: fadeInFromBottom 2s ease-in-out forwards;
+        animation: fadeInFromBottom 1s ease-in-out forwards;
       }
     }
   }
@@ -139,7 +141,8 @@
     outline-offset: -3px;
     overflow: hidden;
     position: relative;
-
+    border-radius: 3px;
+    overflow: hidden;
     img {
       display: block;
       border-radius: 3px;

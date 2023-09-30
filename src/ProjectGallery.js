@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./ProjectGallery.css";
 import clicker from "./images/Clicker.PNG";
 import stock from "./images/Stock.PNG";
 import playGame from "./images/PlayGame.PNG";
 
 export default function ProjectGallery() {
-  //   const { name, stack, text, img, link };
+  const projectsRef = useRef([]);
+
+  const options = {
+    root: null,
+    threshold: 0.1,
+    rootMargin: "-75px 0px",
+  };
+
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry, index) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+      entry.target.classList.add("inView");
+    });
+  }, options);
+
+  useEffect(() => {
+    if (projectsRef.current)
+      projectsRef.current.forEach((project, index) => {
+        observer.observe(projectsRef.current[index]);
+      });
+
+    return () => {
+      if (projectsRef.current)
+        projectsRef.current.forEach((project, index) => {
+          observer.unobserve(projectsRef.current[index]);
+        });
+    };
+  }, [projectsRef.current, options]);
 
   const galleryItems = [
     {
@@ -34,19 +63,27 @@ export default function ProjectGallery() {
     },
   ];
 
+  let delay = (index) => {
+    return 0.25 * index + 0.25;
+  };
   return (
     <section className="gallery">
       <div className="container">
         <h3 className="title">Projects</h3>
         <div className="flexGallery">
           {galleryItems.map((item, index) => (
-            <article className="galleryItem">
+            <article
+              className="galleryItem"
+              ref={(el) => {
+                projectsRef.current[index] = el;
+              }}
+              style={{ animationDelay: `${delay(index)}s` }}
+            >
               <img src={item.img} alt={`project ${index}`} />
               <h4 className="projectTitle">{item.name}</h4>
               <div className="stack">{item.stack}</div>
               {/* <div className="stack">{item.text}</div> */}
               <div className="linkContainer">
-                {" "}
                 <a href={item.link} target="_blank" rel="noreferrer">
                   App
                 </a>
