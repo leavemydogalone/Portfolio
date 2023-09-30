@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import ProjectGallery from "./ProjectGallery";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav />
       <About />
       <Projects />
+      <ProjectGallery />
       <Contact />
     </div>
   );
