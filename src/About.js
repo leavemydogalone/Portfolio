@@ -105,7 +105,7 @@ export default function About() {
         </figure>
         <div className="text-wrap">
           <h2 className="small-title">Welcome!</h2>
-          <h1 className="title">My name is Nik Port</h1>
+          <h1 className="title">My name is Nik&nbsp;Port</h1>
           <p className="text">
             I am a software engineer with more than two years of experience
             creating websites and applications
@@ -129,6 +129,9 @@ export default function About() {
           </div>
         </div>
       </div>
+      <a className="downArrow" href="#whoIsNik">
+        🠇
+      </a>
     </section>
   );
 }
