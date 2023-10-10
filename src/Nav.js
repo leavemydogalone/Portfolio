@@ -25,7 +25,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://www.github.com/leavemydogalone/Portfolio"
+              href="https://www.github.com/leavemydogalone"
               target="_blank"
               rel="noreferrer"
             >
