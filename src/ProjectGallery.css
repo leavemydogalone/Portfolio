@@ -1,6 +1,6 @@
 .gallery {
   min-height: 50vh;
-  padding: 10vh 0 12vh;
+  padding: 10vh 0 16vh;
   background: linear-gradient(
     60deg,
     transparent 45%,
@@ -36,6 +36,13 @@
   & h3 {
     color: #1c2f58;
     margin-bottom: 50px;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery .title {
+    font-size: 2.5rem;
   }
 }
 
@@ -64,6 +71,7 @@
   }
   & a {
     margin: 0 10px 5px 0;
+    font-weight: bold;
   }
 }
 
