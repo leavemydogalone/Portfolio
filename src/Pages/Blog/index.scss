@@ -1,6 +1,10 @@
 .articles-container {
   padding: 160px 30px 80px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
 
+  h2,
   h3 {
     margin-top: 30px;
     color: var(--black);
@@ -9,6 +13,7 @@
   p {
     margin: 15px 0;
     color: var(--grey);
+    line-height: 160%;
   }
 
   hr {
