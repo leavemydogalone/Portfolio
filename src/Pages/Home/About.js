@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import { useState, useRef, useEffect } from "react";
-import profile from "./images/ver2.webp";
+import profile from "../../images/ver2.webp";
 
 export default function About() {
   const about = useRef(null);
@@ -109,14 +109,15 @@ export default function About() {
           <p className="text">
             I am a software engineer with more than two years of experience
             creating websites and applications
-            <p class="text">
-              I have a passion for implementing ideas and creating fun and
-              interactive web experiences
-            </p>
-            <p class="text">
-              Just look at this fun and interative experience, here:
-            </p>
           </p>
+          <p class="text">
+            I have a passion for implementing ideas and creating fun and
+            interactive web experiences
+          </p>
+          <p class="text">
+            Just look at this fun and interative experience, here:
+          </p>
+
           <div className="clicker-container">
             <p className="inside-text">{insideText}</p>
             <div className="clicker-mover">

@@ -12,7 +12,7 @@ export default function Nav() {
 
         <ul className="links-list">
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a
@@ -40,6 +40,9 @@ export default function Nav() {
             >
               Resume
             </a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
           </li>
         </ul>
       </nav>

@@ -1,18 +1,11 @@
 import "./App.css";
 import Nav from "./Nav";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import ProjectGallery from "./ProjectGallery";
+import { Home } from "./Pages/Home/index.js";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <About />
-      <Projects />
-      <ProjectGallery />
-      <Contact />
+      <Home />
     </div>
   );
 }

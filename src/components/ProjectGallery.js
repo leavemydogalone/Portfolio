@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./ProjectGallery.css";
-import clicker from "./images/Clicker.PNG";
-import stock from "./images/Stock.PNG";
-import playGame from "./images/PlayGame.PNG";
+import clicker from "../images/Clicker.PNG";
+import stock from "../images/Stock.PNG";
+import playGame from "../images/PlayGame.PNG";
 
 export default function ProjectGallery() {
   const projectsRef = useRef([]);

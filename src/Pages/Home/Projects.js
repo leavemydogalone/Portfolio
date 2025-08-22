@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Projects.scss";
-import Gallery from "./components/Gallery";
+import Gallery from "../../components/Gallery";
 
-import games from "./images/click.webp";
-import convo1 from "./images/convo1.webp";
+import games from "../../images/click.webp";
+import convo1 from "../../images/convo1.webp";
 
 export default function Projects() {
   const projectsRef = useRef([]);

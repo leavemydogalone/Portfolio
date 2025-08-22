@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "../../components/ContactForm";
 import "./Contact.scss";
 
 export default function Contact() {
