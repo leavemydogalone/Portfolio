@@ -107,12 +107,12 @@ export default function About() {
           <h2 className="small-title">Welcome!</h2>
           <h1 className="title">My name is Nik&nbsp;Port</h1>
           <p className="text">
-            I am a software engineer with more than two years of experience
-            creating websites and applications
+            I am a full-stack software engineer with more than four years of experience
+            building everything from API's to UI's
           </p>
           <p class="text">
-            I have a passion for implementing ideas and creating fun and
-            interactive web experiences
+            I have a passion for implementing ideas and creating reliable,
+            user-centered software experiences
           </p>
           <p class="text">
             Just look at this fun and interative experience, here:
