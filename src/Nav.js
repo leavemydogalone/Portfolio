@@ -34,7 +34,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/119s-71_J-k2cLRuNH_YASWJOk42lZS6z/view?usp=sharing"
+              href="https://www.canva.com/design/DAG5vtLOFk0/KOAAdaZSEyRSTP4Pn_oKlg/view?utm_content=DAG5vtLOFk0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc12f01309e"
               target="_blank"
               rel="noreferrer"
             >
